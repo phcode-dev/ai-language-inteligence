@@ -1,4 +1,8 @@
 #!/bin/bash
 
-# Launch Qdrant as a standalone server without telemetry
-./qdrant --disable-telemetry
+# Get the absolute path to the script directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Launch Qdrant binary from the same directory as the script
+"$SCRIPT_DIR/qdrant" --disable-telemetry
+

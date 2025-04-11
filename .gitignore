@@ -1,0 +1,4 @@
+.qdrant-initialized
+.venv/
+storage/
+
